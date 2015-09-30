@@ -1,0 +1,3 @@
+sessions/*
+vimrc_custom
+autoload/pathogen.vim
