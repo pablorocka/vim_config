@@ -225,7 +225,8 @@ autocmd BufNewFile,BufRead *.map set filetype=map
 autocmd BufNewFile,BufRead *.xml set filetype=xml.skynet
 autocmd BufNewFile,BufRead *.mos set filetype=mos
 autocmd BufNewFile,BufRead *.md  set filetype=markdown
-autocmd BufNewFile,BufRead *.xml,*.html setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd BufNewFile,BufRead *.xml,*.html,*.sql setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType xml,html,sql setlocal tabstop=4 shiftwidth=4 softtabstop=4
 let g:sqlutil_load_default_maps = 0
 " Keep the clipboard after paste
 vnoremap <leader>p "_dP
