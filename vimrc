@@ -148,6 +148,7 @@ let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 " syntastic
 let g:syntastic_cpp_compiler_options = '-std=gnu++11'
 let g:syntastic_always_populate_loc_list=1
+let g:syntastic_enable_perl_checker = 1
 " Browserlink extensions to reload automatically:
 "let g:bl_pagefiletypes = [ 'html', 'javascript', 'php', 'mkd' ]
 " Incsearch mappings
@@ -225,8 +226,8 @@ autocmd BufNewFile,BufRead *.map set filetype=map
 autocmd BufNewFile,BufRead *.xml set filetype=xml.skynet
 autocmd BufNewFile,BufRead *.mos set filetype=mos
 autocmd BufNewFile,BufRead *.md  set filetype=markdown
-autocmd BufNewFile,BufRead *.xml,*.html,*.sql setlocal tabstop=4 shiftwidth=4 softtabstop=4
-autocmd FileType xml,html,sql setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd BufNewFile,BufRead *.xml,*.html,*.sql,*css setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType xml,html,sql,css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 let g:sqlutil_load_default_maps = 0
 " Keep the clipboard after paste
 vnoremap <leader>p "_dP
