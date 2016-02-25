@@ -145,6 +145,7 @@ let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['xml'] = ''
 let g:webdevicons_enable = 1
 " Ctrlp
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:ctrlp_follow_symlinks = 1
 " syntastic
 let g:syntastic_cpp_compiler_options = '-std=gnu++11'
 let g:syntastic_always_populate_loc_list=1
