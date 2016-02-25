@@ -115,3 +115,6 @@
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
+[submodule "bundle/vim-diff-enhanced"]
+	path = bundle/vim-diff-enhanced
+	url = https://github.com/chrisbra/vim-diff-enhanced.git
