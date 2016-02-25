@@ -118,3 +118,9 @@
 [submodule "bundle/vim-diff-enhanced"]
 	path = bundle/vim-diff-enhanced
 	url = https://github.com/chrisbra/vim-diff-enhanced.git
+[submodule "bundle/FastFold"]
+	path = bundle/FastFold
+	url = https://github.com/Konfekt/FastFold.git
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
