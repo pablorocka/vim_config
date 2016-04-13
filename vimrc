@@ -78,6 +78,8 @@ set showcmd
 " Setting font for Gui
 if has("gui_running")
         set guifont=Ume\ Gothic\ 13
+else
+        set background=dark
 endif
 " disable mouse
 set mouse=""
@@ -151,7 +153,7 @@ let g:syntastic_cpp_compiler_options = '-std=gnu++11'
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_enable_perl_checker = 1
 " Browserlink extensions to reload automatically:
-"let g:bl_pagefiletypes = [ 'html', 'javascript', 'php', 'mkd' ]
+let g:bl_pagefiletypes = [ 'html', 'javascript', 'php', 'mkd', 'r' ]
 " Incsearch mappings
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
@@ -232,7 +234,7 @@ autocmd FileType xml,html,sql,css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 let g:sqlutil_load_default_maps = 0
 " Keep the clipboard after paste
 vnoremap <leader>p "_dP
-let g:markdown_fenced_languages = [ 'perl', 'css', 'html', 'javascript', 'sh', 'xml', 'xquery', 'conf' ]
+let g:markdown_fenced_languages = [ 'perl', 'css', 'html', 'javascript', 'sh', 'xml', 'xquery', 'conf', 'r', 'yaml', 'sql' ]
 "so ~/.vim/scripts/test.vim
 "so ~/.vim/scripts/tabsize_switch.vim
 "so ~/.vim/scripts/a_indent/a_indent.vim
