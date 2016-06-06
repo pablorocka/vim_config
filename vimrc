@@ -77,7 +77,7 @@ set guioptions-=T
 set showcmd
 " Setting font for Gui
 if has("gui_running")
-        set guifont=Ume\ Gothic\ 13
+        set guifont=UmeForPowerline\ Nerd\ Font\ 13
 else
         set background=dark
 endif
@@ -104,11 +104,11 @@ set cursorline
 call pathogen#infect()
 " Airline
 set laststatus=2
+let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 let g:airline_theme = 'badwolf'
-let g:airline_powerline_fonts = 1
 " Airline Extensions
 let g:airline#extensions#tabline#enabled   = 1
 let g:airline#extensions#syntastic#enabled = 1
@@ -208,6 +208,8 @@ nmap <F4> :set ft=
 nmap <C-A-Home> :Startify<cr>
 " To change the Tabsize
 nmap <F2> :Stab<cr>
+" Launch gitg
+nnoremap \gg :silent ! gitg &<cr>
 " }}}
 
 "   Other Settings
