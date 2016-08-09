@@ -127,3 +127,6 @@
 [submodule "bundle/markdown-preview"]
 	path = bundle/markdown-preview
 	url = https://github.com/iamcco/markdown-preview.vim.git
+[submodule "bundle/vim-pipe"]
+	path = bundle/vim-pipe
+	url = https://github.com/krisajenkins/vim-pipe.git

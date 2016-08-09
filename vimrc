@@ -77,7 +77,7 @@ set guioptions-=T
 set showcmd
 " Setting font for Gui
 if has("gui_running")
-        set guifont=UmeForPowerline\ Nerd\ Font\ 13
+        set guifont=Ume\ Gothic\ for\ Powerline\ 15
 else
         set background=dark
 endif
@@ -114,6 +114,14 @@ let g:airline#extensions#tabline#enabled   = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled    = 1
 let g:airline_symbols.branch = '' " Other possible symbols:⎇  
+let g:airline_left_sep = ' '
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '⯈'
+"let g:airline_left_sep = ' '
+"let g:airline_left_sep = '⯈'
+"let g:airline_left_sep = ''
+"let g:airline_right_sep = '«'
+let g:airline_right_sep = ' '
 " NerdTree
 nmap <C-F10> :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode  = 2
@@ -209,7 +217,7 @@ nmap <C-A-Home> :Startify<cr>
 " To change the Tabsize
 nmap <F2> :Stab<cr>
 " Launch gitg
-nnoremap \gg :silent ! gitg &<cr>
+nnoremap \gg :silent ! git-cola &<cr>
 " }}}
 
 "   Other Settings
