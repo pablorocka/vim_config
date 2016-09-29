@@ -97,9 +97,6 @@
 [submodule "bundle/vim-marching"]
 	path = bundle/vim-marching
 	url = https://github.com/osyo-manga/vim-marching.git
-[submodule "bundle/vim-markdown-folding"]
-	path = bundle/vim-markdown-folding
-	url = https://github.com/nelstrom/vim-markdown-folding.git
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
