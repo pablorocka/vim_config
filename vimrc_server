@@ -1,0 +1,103 @@
+" Disable backup files and swap files
+set nobackup
+set nowritebackup
+set noswapfile
+" Read .exrc in each directory
+set exrc
+" Auto read buffer when changed externally
+set autoread
+" Allow switching unsaved buffers
+set hidden
+" Options to save when making views
+set viewoptions=folds,options,cursor
+" Options when saving sessions
+set sessionoptions=buffers,curdir,folds,options,tabpages,winsize,globals,localoptions
+" Stuff to save on viminfo
+set viminfo='1000,f0,<50,s10,h,%0
+" Down redraw while executing macros
+set lazyredraw
+" Read specific settings for specific files
+set modeline
+
+" Search options:
+set ignorecase
+set smartcase
+" set magic regular expressions
+set magic
+" Incremental search and Highlight search results
+set hlsearch
+set incsearch"
+" Setting Tabs and Spaces settings
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
+set expandtab
+set smarttab
+set backspace=indent,eol,start
+" other programming options
+set showmatch
+set autoindent
+" when scrolling don't move the cursor to start of line for non-empty lines
+set nostartofline
+" leave 5 lines when moving the cursor at the top or the end of the page
+set scrolloff=4
+" Activating enchanced command completion mode
+set wildmenu
+" Detecting filetypes
+filetype plugin indent on
+
+
+" Enable syntax highlighting
+syntax on
+" Show partial command
+set showcmd
+" Setting background
+set background=dark
+" Showing invisible characters (tabs and EOL)
+set list
+set listchars=tab:⇨\ ,eol:↩
+" disable error bells and visual bells
+set noerrorbells
+set novisualbell
+" show line and relative line number
+set number
+set relativenumber
+" Display cursor position in buffer
+set ruler
+" Highlight cursor line
+set cursorline
+
+" Mappings
+" window Movement
+nnoremap <C-k> <C-W>k
+nnoremap <C-j> <C-W>j
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
+" Mapping folding to F9 key
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+" Add blank line above and below using + and -
+nnoremap - maO<esc>`a
+nnoremap + mao<esc>`a
+" Moving between buffers
+nmap <S-Right> :bn!<cr>
+nmap <S-Left>  :bp!<cr>
+nnoremap <silent> <C-S> :<C-u>Update<CR>
+noremap <C-S> :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
+" Resizing windows
+nnoremap <left>  :wincmd <<cr>
+nnoremap <right> :wincmd ><cr>
+nnoremap <up>    :wincmd +<cr>
+nnoremap <down>  :wincmd -<cr>
+" Other mappings
+nmap <F4> :set ft=
+map <F10> :noh<CR>
+" Map for easy switching buffers
+nnoremap <F6> :buffers<CR>:buffer!<Space>
+nnoremap <F5> <C-L>
+autocmd BufNewFile,BufRead *.xml,*.html,*.sql,*css setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType xml,html,sql,css setlocal tabstop=4 shiftwidth=4 softtabstop=4
